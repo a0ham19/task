@@ -69,9 +69,9 @@ graph TD
         end
 
         subgraph "Middleware"
-            JSON[📦 express.json()]
-            CORS[🌐 cors()]
-            ErrorHandler[⚠️ 404 Error Handler]
+            JSON[express.json Middleware]
+            CORS[cors Middleware]
+            ErrorHandler[404 Error Handler]
         end
     end
 
@@ -103,4 +103,4 @@ erDiagram
         VARCHAR(255) title
         BOOLEAN is_completed
     }
-```
+````
