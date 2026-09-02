@@ -61,7 +61,20 @@ npm install
 
 2. Create or configure your MySQL database.
 
-3. Start the server:
+3. Run the database migration and demo seed:
+
+```bash
+npm run db:setup
+```
+
+To run these steps separately:
+
+```bash
+npm run db:migrate
+npm run db:seed
+```
+
+4. Start the server:
 
 ```bash
 npm start

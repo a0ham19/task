@@ -90,7 +90,6 @@ async function start() {
     try {
         await sequelize.authenticate();
         console.log("Connected to MySQL successfully.");
-        await sequelize.sync({ alter: true });
         app.listen(PORT, "0.0.0.0", () => {
             console.log(`Server running at http://localhost:${PORT}`);
         });

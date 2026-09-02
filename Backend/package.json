@@ -3,12 +3,21 @@
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-        "start": "node server.js"
+        "start": "node server.js",
+        "db:migrate": "sequelize-cli db:migrate",
+        "db:migrate:status": "sequelize-cli db:migrate:status",
+        "db:migrate:undo": "sequelize-cli db:migrate:undo",
+        "db:seed": "sequelize-cli db:seed:all",
+        "db:seed:undo": "sequelize-cli db:seed:undo:all",
+        "db:setup": "npm run db:migrate && npm run db:seed"
     },
     "dependencies": {
         "cors": "^2.8.6",
         "express": "^5.2.1",
         "mysql2": "^3.23.3",
         "sequelize": "^6.37.7"
+    },
+    "devDependencies": {
+        "sequelize-cli": "^6.6.5"
     }
 }
